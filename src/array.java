@@ -27,5 +27,17 @@ public class array{
 
         }System.out.println("\n");
     }
+    
+    public void delete()
+    {
+        System.out.println("enter the location of the element to be deleted");
+        int k=scan.nextInt()-1;
+        for(int i=k;i<n-1;i++)
+        {
+            Array1[i]=Array1[i+1];
+        }
+        n=n-1;
+
+    }
 
 }
