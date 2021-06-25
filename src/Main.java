@@ -20,7 +20,7 @@ public class Main {
                     a1.put_data();
                     break;
                 default:
-                    System.out.println("Invalid choice");
+                    System.out.println("It is Invalid choice");
             }
 
         }while(ch!=8);
