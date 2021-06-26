@@ -5,7 +5,7 @@ public class Main
 
     public static void main(String[] args) 
     {
-        array a1=new array();
+        Array a1=new Array();
         int ch;
 		do{
 			System.out.println("1 Insert Array \n2.Print Array \n3.Insert \n4.Delete \n5.Search \n6.Sorting");

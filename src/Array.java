@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class array {
+public class Array {
 	 int Array1[] = new int[10];
 	 int n;
 	 Scanner sc = new Scanner(System.in);
