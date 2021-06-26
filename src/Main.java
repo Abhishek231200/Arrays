@@ -1,28 +1,43 @@
 import java.util.Scanner;
 
-public class Main {
+public class Main 
+{
 
     public static void main(String[] args) 
     {
         array a1=new array();
-
         int ch;
-        do { System.out.println("1: Insert array\n2: Print array");
-        System.out.println("Enter your choice");
-		Scanner scan=new Scanner(System.in);
-        ch=scan.nextInt();
-
-            switch (ch) {
-                case 1:
-                    a1.get_data();
-                    break;
-                case 2:
-                    a1.put_data();
-                    break;
-                default:
-                    System.out.println("It is Invalid choice");
-            }
-
-        }while(ch!=8);
-    }
+		do{
+			System.out.println("1 Insert Array \n2.Print Array \n3.Insert \n4.Delete \n5.Search \n6.Sorting");
+			System.out.println("Enter choice");
+			@SuppressWarnings("resource")
+			Scanner sc = new Scanner(System.in);
+			ch = sc.nextInt();
+		
+			switch(ch)
+			{
+				case 1: 			
+					a1.getData();
+					break;
+				case 2:
+					a1.putData();
+					break;
+				case 3:
+					a1.Insert();
+					break;
+				case 4:
+					a1.Delete();
+					break;
+				case 5:
+					a1.Search();
+					break;
+				case 6:
+					a1.Sorting();
+					break;
+				default:
+					System.out.println("Invalid Case");
+					break;
+			}
+		  }while(ch!=7);		
+	}		
 }
